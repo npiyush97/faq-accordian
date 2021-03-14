@@ -1,0 +1,150 @@
+@import './reset';
+@import './variable';
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(5deg,$SoftBlue,$SoftViolet);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    max-width: $Mobile;
+    display: flex;
+    justify-content: center;
+    @media only screen and (min-width:700px){
+        max-width: $Desktop;
+    }
+}
+
+.card{
+    max-width: 300px;
+    width: 100%;
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    @media only screen and (min-width:700px) {
+        max-width: 1000px;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0;
+        background-image: none;;
+    }
+}
+
+.card_left{
+    height: 100%;
+    @media only screen and (min-width:700px) {
+        background-image: url(../images/bg-pattern-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: -560px -310px;
+    }
+}
+
+.img_container{
+    position: relative;
+    width: 100%;
+    @media only screen and (min-width:700px) {
+        margin-top: 50px;
+        left: -70px;
+    }
+}
+
+.main-img-mobile{
+    display: block;
+    position: absolute;
+    max-width: 250px;
+    margin: 0 auto;
+    top: -100px;
+    left: 10px;
+    @media only screen and (min-width:700px) {
+        display: none;
+    }
+}
+
+.main-image-desktop{
+    max-width: 500px;
+    display: block;
+    top: 300px;
+    clip-path: inset(0px 0px 0px 67px);
+    @media only screen  and (max-width:700px){
+        display: none;
+    }
+}
+.box-img-desktop{
+    position: absolute;
+    z-index: 3;
+    top: 140px;
+    left: -25px;
+    @media only screen and (max-width:700px) {
+        display: none;
+    }
+}
+
+.card_right{
+    margin: 2rem;
+    @media only screen and (min-width:700px) {
+        width: 100%;
+        margin-bottom: 4rem;
+        margin-top: 3rem;
+    }
+    h1{
+        margin-top: 3rem;
+        padding: 3rem 0 1rem 0;
+        text-align: center;
+        font-weight: $bold-weight;
+        font-size: 32px;
+        @media only screen and (min-width:700px){
+            padding-top: 1rem;
+            margin-top: 1rem;
+            text-align: left;
+        }
+    }
+    .accordian__section{
+        padding: 0.5rem 0;
+        border-bottom: $LightGrayishBlue 1px solid;
+        @media only screen and (min-width) {
+            max-width: 400px;
+        }
+    }
+    .question{
+        padding: 1rem 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+    }
+    .question__content{
+        color: $VeryDarkGrayishBlue;
+        text-align: left;
+        &:hover{
+            color: $SoftRed;
+        }
+    }
+    .question--active{
+        color: $VeryDarkGrayishBlue;
+        font-weight: $bold-weight;
+    }
+    .question__arrow--active{
+        transform: rotate(180deg);
+    }
+    .answer{
+        color: $VeryDarkGrayishBlue;
+        padding-bottom: 1rem;
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+

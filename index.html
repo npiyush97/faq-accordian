@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./scss/index.css" />
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="card">
+        <div class="card_left">
+          <div class="img_container">
+            <img
+              src="./images/illustration-woman-online-mobile.svg"
+              alt="women-illustration-mobile"
+              class="main-img-mobile"
+            />
+          </div>
+          <div class="img_container">
+            <img
+              src="./images/illustration-box-desktop.svg"
+              alt="box-desktop"
+              class="box-img-desktop"
+            />
+            <img
+              src="./images/illustration-woman-online-desktop.svg"
+              alt="women-illustration-desktop"
+              class="main-image-desktop"
+            />
+          </div>
+        </div>
+        <div class="card_right">
+          <h1>FAQ</h1>
+          <div class="accordian">
+            <div class="accordian__section">
+              <div class="question">
+                <h2 class="question__content">
+                  How many team members can I invite?
+                </h2>
+                <img
+                  class="question__arrow"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer">
+                <p class="answer__content">
+                  You can invite up to 2 additional users on the Free plan.
+                  There is no limit on team members for the Premium plan.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordian__section">
+              <div class="question">
+                <h2 class="question__content">
+                  What is the maximum file upload size?
+                </h2>
+                <img
+                  class="question__arrow"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer">
+                <p class="answer__content">
+                  No more than 2GB. All files in your account must fit your
+                  allotted storage space.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordian__section">
+              <div class="question">
+                <h2 class="question__content">How do I reset my password?</h2>
+                <img
+                  class="question__arrow"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer">
+                <p class="answer__content">
+                  Click “Forgot password” from the login page or “Change
+                  password” from your profile page. A reset link will be emailed
+                  to you.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordian__section">
+              <div class="question">
+                <h2 class="question__content">Can I cancel my subscription?</h2>
+                <img
+                  class="question__arrow"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer">
+                <p class="answer__content">
+                  Yes! Send us a message and we’ll process your request no
+                  questions asked.
+                </p>
+              </div>
+            </div>
+
+            <div class="accordian__section">
+              <div class="question">
+                <h2 class="question__content">
+                  Do you provide additional support?
+                </h2>
+                <img
+                  class="question__arrow"
+                  src="./images/icon-arrow-down.svg"
+                  alt=""
+                />
+              </div>
+              <div class="answer">
+                <p class="answer__content">
+                  Chat and email support is available 24/7. Phone lines are open
+                  during normal business hours.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="index.js"></script>
+</html>

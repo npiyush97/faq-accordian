@@ -1,0 +1,231 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  line-height: 1;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+button {
+  cursor: pointer;
+}
+
+h1,
+h2,
+p {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(5deg, #6565e7, #af67e9);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media only screen and (min-width: 700px) {
+  .container {
+    max-width: 1440px;
+  }
+}
+
+.card {
+  max-width: 300px;
+  width: 100%;
+  background-image: url(../images/bg-pattern-mobile.svg);
+  background-position: top;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 700px) {
+  .card {
+    max-width: 1000px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 0;
+    background-image: none;
+  }
+}
+
+.card_left {
+  height: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .card_left {
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: -560px -310px;
+  }
+}
+
+.img_container {
+  position: relative;
+  width: 100%;
+}
+
+@media only screen and (min-width: 700px) {
+  .img_container {
+    margin-top: 50px;
+    left: -70px;
+  }
+}
+
+.main-img-mobile {
+  display: block;
+  position: absolute;
+  max-width: 250px;
+  margin: 0 auto;
+  top: -100px;
+  left: 10px;
+}
+
+@media only screen and (min-width: 700px) {
+  .main-img-mobile {
+    display: none;
+  }
+}
+
+.main-image-desktop {
+  max-width: 500px;
+  display: block;
+  top: 300px;
+  -webkit-clip-path: inset(0px 0px 0px 67px);
+          clip-path: inset(0px 0px 0px 67px);
+}
+
+@media only screen and (max-width: 700px) {
+  .main-image-desktop {
+    display: none;
+  }
+}
+
+.box-img-desktop {
+  position: absolute;
+  z-index: 3;
+  top: 140px;
+  left: -25px;
+}
+
+@media only screen and (max-width: 700px) {
+  .box-img-desktop {
+    display: none;
+  }
+}
+
+.card_right {
+  margin: 2rem;
+}
+
+@media only screen and (min-width: 700px) {
+  .card_right {
+    width: 100%;
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+  }
+}
+
+.card_right h1 {
+  margin-top: 3rem;
+  padding: 3rem 0 1rem 0;
+  text-align: center;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+@media only screen and (min-width: 700px) {
+  .card_right h1 {
+    padding-top: 1rem;
+    margin-top: 1rem;
+    text-align: left;
+  }
+}
+
+.card_right .accordian__section {
+  padding: 0.5rem 0;
+  border-bottom: #e7e7e9 1px solid;
+}
+
+@media only screen and (min-width) {
+  .card_right .accordian__section {
+    max-width: 400px;
+  }
+}
+
+.card_right .question {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.card_right .question__content {
+  color: #4a4b5e;
+  text-align: left;
+}
+
+.card_right .question__content:hover {
+  color: #f47c57;
+}
+
+.card_right .question--active {
+  color: #4a4b5e;
+  font-weight: 700;
+}
+
+.card_right .question__arrow--active {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card_right .answer {
+  color: #4a4b5e;
+  padding-bottom: 1rem;
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */

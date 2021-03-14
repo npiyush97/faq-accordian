@@ -1,0 +1,25 @@
+@import './variable';
+
+* {
+    box-sizing: border-box;
+    line-height: 1;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+p {
+    font-family: $font;
+    font-size: $body-size;
+    font-weight: $body-weight;
+}
